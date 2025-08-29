@@ -27,7 +27,7 @@ const FeatureProperties = ({ properties }) => {
       <div className="grid-layout-3 mt-8">
         {properties.map((property) => {
           const [heartFill, setHeartFill] = useState(false); // Per-property state
-          const baseUrl = "https://booking.dynumtech.com/"; // Adjust if needed
+          const baseUrl = "https://booking.dynumtech.com/storage/properties/"; // Adjust if needed
           const imageSrc = property.images
             ? `${baseUrl}${property.images}`
             : PlaceholderImage;

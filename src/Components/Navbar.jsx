@@ -133,6 +133,19 @@ const Navbar = () => {
                 </li>
               </NavLink>
               <NavLink
+                to={"/booking"}
+                className={({ isActive }) => (isActive ? navActive : navNormal)}
+              >
+                <li
+                  onClick={scrollYHandler}
+                  className=" w-[60px] h-[40px] flex justify-center items-center mx-3 cursor-pointer"
+                >
+                  <span className=" fs-[17px] dark:hover:text-[#771f28] hover:text-[#771f28]">
+                    Booking
+                  </span>
+                </li>
+              </NavLink>
+              <NavLink
                 to={"/aboutus"}
                 className={({ isActive }) => (isActive ? navActive : navNormal)}
               >
@@ -171,6 +184,7 @@ const Navbar = () => {
                   </span>
                 </li>
               </NavLink>
+              
               <NavLink
                 to={"/faqs"}
                 className={({ isActive }) => (isActive ? navActive : navNormal)}

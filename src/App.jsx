@@ -11,6 +11,7 @@ import ForgetPW from "./Pages/ForgetPW";
 import Pricing from "./Pages/Pricing";
 import Features from "./Pages/Features";
 import Faqs from "./Pages/Faqs";
+import Booking from "./Pages/Booking";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import "./index.css";
@@ -113,6 +114,16 @@ const App = () => {
             }
           />
 
+          <Route
+            path="/booking"
+            element={
+              <>
+                <Navbar />
+                <Booking />
+                <Footer />
+              </>
+            }
+          />
           <Route
             path={"/*"}
             element={
